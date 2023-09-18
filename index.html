@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  
+    <section class="container">
+   
+        <div class="card">
+            <div class="card-header">Plan 1</div>
+            <div class="card-body">
+                <h5 class="card-title">Price: $10/month</h5>
+                <button class="btn btn-primary pricing-button" data-toggle="modal" data-target="#orderModal">Order</button>
+            </div>
+        </div>
+
+     
+        <div class="card">
+            <div class="card-header">Plan 2</div>
+            <div class="card-body">
+                <h5 class="card-title">Price: $20/month</h5>
+                <button class="btn btn-primary pricing-button" data-toggle="modal" data-target="#orderModal">Order</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Plan 3</div>
+            <div class="card-body">
+                <h5 class="card-title">Price: $30/month</h5>
+                <button class="btn btn-primary pricing-button" data-toggle="modal" data-target="#orderModal">Order</button>
+            </div>
+        </div>
+    </section>
+
+ 
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Order Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+            
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Order Comments</label>
+                            <textarea class="form-control" id="comments"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitOrder">Submit Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
